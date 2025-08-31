@@ -4,16 +4,16 @@ JWT Inspector CLI is a command-line tool designed to decode, validate, and analy
 
 ## Features
 
-- **Decode Payload and Header**: Easily decode the header and payload of a JWT to inspect its contents.
-- **Check for None Algorithm**: Validate if the JWT uses the "none" algorithm, which can indicate potential security issues.
-- **Signature Verification**: Verify the signature of the JWT if the secret or public key is known, ensuring the token's integrity.
+- Decode Payload and Header: Easily decode the header and payload of a JWT to inspect its contents.
+- Check for None Algorithm: Validate if the JWT uses the "none" algorithm, which can indicate potential security issues.
+- Signature Verification*: Verify the signature of the JWT if the secret or public key is known, ensuring the token's integrity.
 
 ## Installation
 
 To install the JWT Inspector CLI, clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/yourusername/jwt-inspector-cli.git
+git clone https://github.com/PRUDIE/jwt-inspector-cli.git
 cd jwt-inspector-cli
 npm install
 ```
@@ -45,6 +45,8 @@ node dist/index.js <jwt-token> --key <your-secret-or-public-key>
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
+
+all other inquiries - cyberprudie@gmail.com
 
 ## License
 
