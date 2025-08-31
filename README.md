@@ -15,7 +15,7 @@ To install the JWT Inspector CLI, clone the repository and install the dependenc
 ```bash
 git clone https://github.com/PRUDIE/jwt-inspector-cli.git
 cd jwt-inspector-cli
-npm install
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ npm install
 After installation, you can run the CLI tool using the following command:
 
 ```bash
-node dist/index.js <jwt-token> --key <your-secret-or-public-key>
+python -m src.main <jwt-token> --key <your-secret-or-public-key>
 ```
 
 Replace `<jwt-token>` with the JWT you want to inspect and `<your-secret-or-public-key>` with the key used for signature verification.
@@ -33,13 +33,13 @@ Replace `<jwt-token>` with the JWT you want to inspect and `<your-secret-or-publ
 To decode a JWT:
 
 ```bash
-node dist/index.js eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+python -m src.main eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
 ```
 
 To verify a JWT signature:
 
 ```bash
-node dist/index.js <jwt-token> --key <your-secret-or-public-key>
+python -m src.main <jwt-token> --key <your-secret-or-public-key>
 ```
 
 ## Contributing
