@@ -32,7 +32,7 @@ def cli(token, key, algorithm):
     
     # Check for none algorithm
     if has_none_algorithm(decoded):
-        click.echo("\n⚠️  WARNING: JWT uses 'none' algorithm - potential security risk!")
+        click.echo("\n WARNING: JWT uses 'none' algorithm - potential security risk!")
     
     # Verify signature if key provided
     if key:
