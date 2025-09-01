@@ -13,8 +13,8 @@ JWT Inspector CLI is a command-line tool designed to decode, validate, and analy
 To install the JWT Inspector CLI, clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/PRUDIE/jwt-inspector.git
-cd jwt-inspector-cli
+git clone https://github.com/PRUDIE/jwt_inspector.git
+cd jwt_inspector
 pip install -r requirements.txt
 ```
 
